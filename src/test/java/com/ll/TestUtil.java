@@ -7,12 +7,14 @@ import java.util.Scanner;
 // 실제 운영하는데 필요한 게 아니라 테스트 할때만 쓰는 Util
 public class TestUtil {
     // gen == generate 생성하다.
+    // 입력
     public static Scanner genScanner(String input) {
         InputStream in = new ByteArrayInputStream(input.getBytes());
 
         return new Scanner(in);
     }
 
+    // 출력
     public static ByteArrayOutputStream setOutToByteArray() {
         final ByteArrayOutputStream output = new ByteArrayOutputStream();
         System.setOut(new PrintStream(output));
