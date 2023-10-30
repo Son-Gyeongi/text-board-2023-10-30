@@ -50,7 +50,6 @@ public class TestUtilTest {
 
         TestUtil.clearSetOutToByteArray(byteArrayOutputStream);
         System.out.println(out);
-        // 출력, 모니터에 대한 출력을 켠다.
         System.out.println("이제는 화면에 출력됩니다.");
     }
 }

@@ -14,7 +14,7 @@ public class TestUtil {
         return new Scanner(in);
     }
 
-    // 출력
+    // 출력, 꺼내기
     public static ByteArrayOutputStream setOutToByteArray() {
         final ByteArrayOutputStream output = new ByteArrayOutputStream();
         System.setOut(new PrintStream(output));
@@ -22,6 +22,7 @@ public class TestUtil {
         return output;
     }
 
+    // 출력, 닫아주기
     public static void clearSetOutToByteArray(ByteArrayOutputStream output) {
         System.setOut(new PrintStream(new FileOutputStream(FileDescriptor.out)));
         try {
