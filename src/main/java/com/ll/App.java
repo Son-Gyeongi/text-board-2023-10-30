@@ -2,6 +2,9 @@ package com.ll;
 
 import java.util.Scanner;
 
+/**
+ * TDD 방식, GITHUB FLOW 방식
+ */
 public class App {
 
     // Scanner를 만들어야 한다.
